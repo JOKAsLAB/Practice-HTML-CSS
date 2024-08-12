@@ -7,9 +7,15 @@
 </head>
 <body>
     
-    <a href="https://www.google.com">
-        <button style="font-size: 25px; background-color: grey; color:lightblue; border-radius:25px "> click me </button>
-    </a>
+    <button onclick="doSomething()" style="font-size: 25px; background-color: grey; color:lightblue; border-radius:25px "> click me </button>
+
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "Goodbye";
+        }
+    </script>
 
 </body>
 </html>
